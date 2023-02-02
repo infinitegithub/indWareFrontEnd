@@ -1,36 +1,42 @@
- #term {
+/*  #term {
      display: flex;
      justify-content: center;
      align-items: center;
      margin: 20px 0;
  }
+ */
 
- */ table {
-     border-collapse: collapse;
- }
+#searchStore {
+    size: 1rem;
 
- th,
- td {
-     border: 1px solid #dddddd;
-     padding: 8px;
-     text-align: left;
- }
+}
 
- tr:hover {
-     background-color: #f5f5f5;
- }
+*/ table {
+    border-collapse: collapse;
+}
 
- .copy.copied {
-     background-color: green;
-     animation: pulse 2s ease;
- }
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
 
- @keyframes pulse {
-     0% {
-         background-color: blue;
-     }
+tr:hover {
+    background-color: #f5f5f5;
+}
 
-     100% {
-         background-color: green;
-     }
- }
+.copy.copied {
+    background-color: green;
+    animation: pulse 2s ease;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
