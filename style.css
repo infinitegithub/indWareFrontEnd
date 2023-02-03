@@ -25,6 +25,16 @@ td {
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+    transition-property: all;
+    animation: appear-letter 0.2s ease-in-out forwards;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: appear-letter;
 }
 
 tr:hover {
