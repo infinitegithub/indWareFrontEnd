@@ -8,11 +8,12 @@
 <title>Search Store</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-<a href="warehouses.html">Warehouses</a>
+<a href="index.html">Stores</a>
+
 </head>
 
 <body>
-    <h3 id="searchStore">Stores</h3>
+    <h3 id="searchStore">Warehouses</h3>
     <div id="searchFeild">
         <input type="text" id="term" placeholder="Search Store..." />
         <button type="submit" class="btn" id="searchButton">Search</button>
@@ -21,7 +22,7 @@
     </div>
     <div id="error">
     </div>
-    <script src="main.js"></script>
+    <script src="warehouses.js"></script>
     <script>
         document.getElementById("term").addEventListener("keyup", function (event) {
             event.preventDefault();
