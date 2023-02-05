@@ -1,4 +1,4 @@
-const link = "https://indsto.onrender.com/search";
+const link = "https://motionless-yak-twill.cyclic.app/search";
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
   const term = document.getElementById('term').value;
@@ -30,7 +30,7 @@ searchButton.addEventListener('click', async () => {
           </thead>
           <tbody>
               ${stores.map(store => {
-            return `
+      return `
               <tr>
                   <td class="copy" data-clipboard-text="${store.StoreNumber}">${store.StoreNumber}</td>
                   <td class="copy" data-clipboard-text="${store.Brand}">${store.Brand}</td>
@@ -44,7 +44,7 @@ searchButton.addEventListener('click', async () => {
                   <td class="copy" data-clipboard-text="${store.PostalCode}">${store.PostalCode}</td>
               </tr>
               `
-        }).join('')}
+    }).join('')}
           </tbody>
       </table> 
       `
