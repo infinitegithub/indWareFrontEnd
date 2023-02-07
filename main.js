@@ -1,4 +1,4 @@
-const link = "https://indsto.onrender.com/search";
+const link = "https://motionless-yak-twill.cyclic.app/search";
 
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
