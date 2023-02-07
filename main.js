@@ -2,7 +2,7 @@ const link = "https://indsto.onrender.com/search";
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
   const term = document.getElementById('term').value;
-  
+term = checkZero(term);
   function checkZero(term){
   let newTerm = term;
   
