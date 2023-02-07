@@ -1,8 +1,17 @@
 const link = "https://warehouses.onrender.com/search";
+function checkZero(term){
+  let newTerm = term;
+  
+  if(term[0] == 0 && term.length > 1){
+    newTerm = term.substring(1, term.length);
+  }
+
+  return newTerm;
+}
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
     const term = document.getElementById('term').value;
-
+    term = checkZero(term);
     const response = await fetch(`${link}?term=${term}`);
     const warehouses = await response.json();
     const resultDiv = document.getElementById('result');
