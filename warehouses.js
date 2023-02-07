@@ -1,4 +1,4 @@
-const link = "https://warehouses.onrender.com/search";
+const link = "https://real-plum-gosling-gown.cyclic.app/search";
 
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
