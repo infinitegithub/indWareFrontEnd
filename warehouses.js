@@ -26,8 +26,8 @@ searchButton.addEventListener('click', async () => {
        <table>
           <thead>
               <tr>
-                  <th>Store Number</th>
-                  <th>Warehouse Name</th>
+                  <th>distributor ID</th>
+                  <th>distributor Name</th>
                   <th>Address</th>
                 
               </tr>

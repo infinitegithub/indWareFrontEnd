@@ -28,9 +28,9 @@ searchButton.addEventListener('click', async () => {
               <tr>
                   <th>Store Number</th>
                   <th>Store Name</th>
+                   <th>LeadershipTeam Email</th>
+                    <th>Phone</th>
                   <th>Brand</th>
-                  <th>LeadershipTeam Email</th>
-                   <th>Phone</th>
                   
                   <th>Address</th>
                   <th>City</th>
@@ -44,11 +44,11 @@ searchButton.addEventListener('click', async () => {
             return `
               <tr>
                   <td class="copy" data-clipboard-text="${store.StoreNumber}">${store.StoreNumber}</td>
-                  <td class="copy" data-clipboard-text="${store.Brand}">${store.Brand}</td>
+                 <td class="copy" data-clipboard-text="${store.StoreName}">${store.StoreName}</td>
                   <td class="copy" data-clipboard-text="${store.LeadershipTeamEemail}">${store.LeadershipTeamEemail}</td>
                   <td class="copy" data-clipboard-text="${store.Phone}">${store.Phone}</td>
-  
-                  <td class="copy" data-clipboard-text="${store.StoreName}">${store.StoreName}</td>
+    <td class="copy" data-clipboard-text="${store.Brand}">${store.Brand}</td>
+                 
                   <td class="copy" data-clipboard-text="${store.Address}">${store.Address}</td>
                   <td class="copy" data-clipboard-text="${store.City}">${store.City}</td>
                   <td class="copy" data-clipboard-text="${store.Provance}">${store.Provance}</td>
