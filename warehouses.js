@@ -18,8 +18,8 @@ searchButton.addEventListener('click', async () => {
        <table>
           <thead>
               <tr>
-                  <th>distributor ID</th>
-                  <th>distributor Name</th>
+                  <th>Distributor ID</th>
+                  <th>Distributor Name</th>
                   <th>Address</th>
                 
               </tr>
