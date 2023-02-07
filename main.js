@@ -2,6 +2,16 @@ const link = "https://indsto.onrender.com/search";
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
   const term = document.getElementById('term').value;
+  
+  function checkZero(term){
+  let newTerm = term;
+  
+  if(term[0] == 0 && term.length > 1){
+    newTerm = term.substring(1, term.length);
+  }
+
+  return newTerm;
+}
   const response = await fetch(`${link}?term=${term}`);
   const stores = await response.json();
   const resultDiv = document.getElementById('result');
@@ -17,10 +27,11 @@ searchButton.addEventListener('click', async () => {
           <thead>
               <tr>
                   <th>Store Number</th>
+                  <th>Store Name</th>
                   <th>Brand</th>
                   <th>LeadershipTeam Email</th>
                    <th>Phone</th>
-                  <th>Store Name</th>
+                  
                   <th>Address</th>
                   <th>City</th>
                  
