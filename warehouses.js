@@ -1,4 +1,4 @@
-const link = "https://real-plum-gosling-gown.cyclic.app/search";
+const link = "https://indiwares.mooo.com/search";
 
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
