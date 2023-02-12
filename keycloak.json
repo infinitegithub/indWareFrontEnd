@@ -1,0 +1,8 @@
+{
+  "realm": "master",
+  "auth-server-url": "https://keycloaked.mooo.com/",
+  "ssl-required": "external",
+  "resource": "indiware",
+  "public-client": true,
+  "confidential-port": 0
+}
