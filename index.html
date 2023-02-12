@@ -6,11 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Search Store</title>
-<script src="https://keycloaked.mooo.com/auth/js/keycloak.js"></script>
+<script src="cdn.jsdelivr.net/npm/keycloak-js/"></script>
 <script src="assests/js/myLogic.js"></script>
 <link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
 <a href="warehouses.html">Warehouses</a>
+<a href="logout.html">Log Out</a>
 </head>
 
 <body onload="initKeycloak()">
@@ -24,14 +25,7 @@
     <div id="error">
     </div>
     <script src="main.js"></script>
-    <script>
-        document.getElementById("term").addEventListener("keyup", function (event) {
-            event.preventDefault();
-            if (event.keyCode === 13) {
-                document.getElementById("searchButton").click();
-            }
-        });
-    </script>
+   
 </body>
 
 </html>
