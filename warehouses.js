@@ -1,7 +1,9 @@
-const link = "https://real-plum-gosling-gown.cyclic.app/search";
+const link = "https://indiwares.mooo.com/search";
+
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
     const term = document.getElementById('term').value;
+
     const response = await fetch(`${link}?term=${term}`);
     const warehouses = await response.json();
     const resultDiv = document.getElementById('result');
@@ -16,8 +18,8 @@ searchButton.addEventListener('click', async () => {
        <table>
           <thead>
               <tr>
-                  <th>Store Number</th>
-                  <th>Warehouse Name</th>
+                  <th>Distributor ID</th>
+                  <th>Distributor Name</th>
                   <th>Address</th>
                 
               </tr>
