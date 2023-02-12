@@ -40,12 +40,3 @@ searchButton.addEventListener('click', async () => {
       `
     }
 });
-
-const copyButtons = document.querySelectorAll('.copy');
-for (let i = 0; i < copyButtons.length; i++) {
-    copyButtons[i].addEventListener('click', (e) => {
-        const itemData = e.target.dataset.clipboardText;
-        navigator.clipboard.writeText(itemData);
-        e.target.classList.add('copied');
-    });
-}
