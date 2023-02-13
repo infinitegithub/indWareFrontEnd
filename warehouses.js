@@ -28,9 +28,9 @@ searchButton.addEventListener('click', async () => {
               ${warehouses.map(warehouses => {
             return `
               <tr>
-                  <td class="copy" data-clipboard-text="${warehouses.warehouseId}">${warehouses.warehouseId}</td>
-                  <td class="copy" data-clipboard-text="${warehouses.warehouseName}">${warehouses.warehouseName}</td>
-                  <td class="copy" data-clipboard-text="${warehouses.ADDRESS}">${warehouses.ADDRESS}</td>
+                  <td>${warehouses.warehouseId}</td>
+                  <td>${warehouses.warehouseName}</td>
+                  <td>${warehouses.ADDRESS}</td>
                  
               </tr>
               `

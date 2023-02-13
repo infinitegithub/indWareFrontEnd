@@ -35,17 +35,41 @@ searchButton.addEventListener('click', async () => {
               ${stores.map(store => {
       return `
               <tr>
-                  <td class="copy" data-clipboard-text="${store.StoreNumber}">${store.StoreNumber}</td>
-                 <td class="copy" data-clipboard-text="${store.StoreName}">${store.StoreName}</td>
-                  <td class="copy" data-clipboard-text="${store.LeadershipTeamEemail}">${store.LeadershipTeamEemail}</td>
-                  <td class="copy" data-clipboard-text="${store.Phone}">${store.Phone}</td>
-    <td class="copy" data-clipboard-text="${store.Brand}">${store.Brand}</td>
-                 
-                  <td class="copy" data-clipboard-text="${store.Address}">${store.Address}</td>
-                  <td class="copy" data-clipboard-text="${store.City}">${store.City}</td>
-                  <td class="copy" data-clipboard-text="${store.Provance}">${store.Provance}</td>
-                  <td class="copy" data-clipboard-text="${store.PostalCode}">${store.PostalCode}</td>
-              </tr>
+                 <td>${store.StoreNumber}<span class="copy-icon"><i class="fas fa-copy"></i></span>
+</td>
+<td>
+  ${store.StoreName}
+  <span class="copy-icon"><i class="fas fa-copy"></i></span>
+</td>
+<td>
+  ${store.LeadershipTeamEemail}
+  <span class="copy-icon"><i class="fas fa-copy"></i></span>
+</td>
+<td>
+  ${store.Phone}
+  <span class="copy-icon"><i class="fas fa-copy"></i></span>
+</td>
+<td>
+  ${store.Brand}
+  <span class="copy-icon"><i class="fas fa-copy"></i></span>
+</td>
+<td>
+  ${store.Address}
+  <span class="copy-icon"><i class="fas fa-copy"></i></span>
+</td>
+<td>
+  ${store.City}
+  <span class="copy-icon"><i class="fas fa-copy"></i></span>
+</td>
+<td>
+  ${store.Provance}
+  <span class="copy-icon"><i class="fas fa-copy"></i></span>
+</td>
+<td>
+  ${store.PostalCode}
+  <span class="copy-icon"><i class="fas fa-copy"></i></span>
+</td>
+</tr>
               `
     }).join('')}
           </tbody>
@@ -53,4 +77,5 @@ searchButton.addEventListener('click', async () => {
       `
   }
 });
+
 
