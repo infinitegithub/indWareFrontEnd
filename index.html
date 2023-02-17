@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<<<<<<< HEAD
-<head>
-=======
 <link>
->>>>>>> d7e32dd (Revert "managed to get the auth to work  for the front page")
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Search Store</title>
 <link rel="stylesheet" href="style.css">
 <a href="warehouses.html">Warehouses</a>
-<<<<<<< HEAD
-<a href="logout.html">Log Out</a>
-=======
 <script src="keycloak.js"></script>
 <script>
->>>>>>> d7e32dd (Revert "managed to get the auth to work  for the front page")
 
     const keycloak = new Keycloak({
         url: 'https://authify.mooo.com',
@@ -34,21 +26,7 @@
     }
 </script>
 </head>
-<script src="keycloak.js"></script>
-<script>
 
-
-    var keycloak = new Keycloak();
-
-    function initKeycloak() {
-        keycloak.init({ onLoad: 'login-required' }).then(function () {
-            constructTableRows(keycloak.idTokenParsed);
-            pasteToken(keycloak.token);
-        }).catch(function () {
-            alert('failed to initialize');
-        });
-   
-</script>
 <body onload="initKeycloak()">
     <h3 id="searchStore">Stores</h3>
     <div id="searchFeild">
