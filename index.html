@@ -1,33 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Search Store</title>
-<link rel="stylesheet" href="style.css">
-<a href="warehouses.html">Warehouses</a>
-<script src="keycloak.js"></script>
-<script>
-
-    const keycloak = new Keycloak({
-        url: 'https://authify.mooo.com',
-        realm: 'myrealm',
-        clientId: 'myApp'
-    });
-    function initKeycloak() {
-        const keycloak = new Keycloak();
-        keycloak.init().then(function (authenticated) {
-            alert(authenticated ? 'authenticated' : 'not authenticated');
-        }).catch(function () {
-            alert('failed to initialize');
-        });
-    }
-</script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Store</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="warehouses.html">Warehouses</a>
 </head>
 
-<body onload="initKeycloak()">
+
+<body>
     <h3 id="searchStore">Stores</h3>
     <div id="searchFeild">
         <input type="text" id="term" placeholder="Search Store..." />
