@@ -1,5 +1,5 @@
-const link = "https://indiware.mooo.com/search";
-
+//const link = "https://indiware.mooo.com/search";
+const link = "https://stores-e02k.onrender.com/search";
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
   const term = document.getElementById('term').value;
