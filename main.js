@@ -1,5 +1,5 @@
-//const link = "https://indiware.mooo.com/search";
-const link = "https://fair-pear-cod-sock.cyclic.app/search";
+const link = "https://indiware.mooo.com/search";
+//const link = "https://fair-pear-cod-sock.cyclic.app/search";
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', async () => {
   const term = document.getElementById('term').value;
