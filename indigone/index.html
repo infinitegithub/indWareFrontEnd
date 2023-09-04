@@ -1,13 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stores</title>
+</head>
+
+<body>
+
+  <a href="warehouses.html">Warehouses</a>
+  <h3 id="searchStore">Stores</h3>
+  <div id="searchFeild">
+    <input type="text" id="term" placeholder="Search Store..." />
+    <button type="submit" class="btn" id="searchButton">Search</button>
+  </div>
+  <div id="result">
+  </div>
+  <div id="error">
+  </div>
+  <script src="main.js"></script>
+  <script>
+    document.getElementById("term").addEventListener("keyup", function (event) {
+      event.preventDefault();
+      if (event.keyCode === 13) {
+        document.getElementById("searchButton").click();
+      }
+    });
+
+
+  </script>
+</body>
+<script type="module" src="/main.js"></script>
+</body>
+
 </html>
