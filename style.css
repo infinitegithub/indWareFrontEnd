@@ -1,19 +1,31 @@
+:root {
+  --primary-color: #090909;
+  --secondary-color: #e8e8e8;
+  --box-shadow-color: #c5c5c5;
+  --box-shadow-hover-color: #161b1b;
+  --table-border-color: #dddddd;
+  --table-hover-bg: #f5f5f5;
+  --body-bg: #efefef;
+  --text-color: #090909;
+  --placeholder-opacity: 0.3;
+  --btn-bg: #efefef;
+  --btn-text-color: #444;
+}
+
 table {
   border-collapse: collapse;
-
 }
 
 #result {
   grid-area: 4 / 1 / 5 / 2;
   justify-self: center;
-
 }
 
 thead {
   text-align: center;
   color: white;
   font-weight: bold;
-  background-color: #090909;
+  background-color: var(--primary-color);
 }
 
 a {
@@ -23,13 +35,12 @@ a {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  color: #090909;
+  color: var(--primary-color);
   padding: 0.7em 1.7em;
-
   border-radius: 0.5em;
-  background: #e8e8e8;
-  border: 1px solid #e8e8e8;
-  box-shadow: 6px 6px 12px #c5c5c5,
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  box-shadow: 6px 6px 12px var(--box-shadow-color),
     -6px -6px 12px #ffffff;
   margin-right: 2rem;
   margin-bottom: 1rem;
@@ -42,7 +53,7 @@ a {
 
 a:active {
   color: #666;
-  box-shadow: inset 4px 4px 12px #c5c5c5,
+  box-shadow: inset 4px 4px 12px var(--box-shadow-color),
     inset -4px -4px 12px #ffffff;
 }
 
@@ -69,7 +80,7 @@ a:after {
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: #161b1b;
+  background-color: var(--box-shadow-hover-color);
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -78,67 +89,46 @@ a:after {
 
 a:hover {
   color: #ffffff;
-  border: 1px solid #161b1b;
+  border: 1px solid var(--box-shadow-hover-color);
 }
 
 a:hover:before {
   top: -35%;
-  background-color: #161b1b;
+  background-color: var(--box-shadow-hover-color);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 a:hover:after {
   top: -45%;
-  background-color: #161b1b;
+  background-color: var(--box-shadow-hover-color);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 th,
 td {
-
-
-  border: 1px solid #dddddd;
+  border: 1px solid var(--table-border-color);
   padding: 8px;
   text-align: left;
   box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
   transition: all 0.3s ease-in-out;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-  transition-property: all;
   animation: appear-letter 0.2s ease-in-out forwards;
-  animation-duration: 0.2s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
   animation-name: appear-letter;
 }
 
 tr:hover {
-  background-color: #f5f5f5;
-  color: #090909;
+  background-color: var(--table-hover-bg);
+  color: var(--text-color);
 }
 
-
-
 body {
-  background: #efefef;
+  background: var(--body-bg);
   font-family: sans-serif;
   display: grid;
-
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   grid-template-columns: 1fr;
   grid-template-rows: 3em 3.5em 2em max-content;
   gap: 11px 0px;
-
-
-
-
-
 }
 
 #searchStore {
@@ -147,18 +137,17 @@ body {
   grid-area: 1 / 1 / 2 / 2;
   justify-self: center;
   text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.6);
-  background: #efefef;
+  background: var(--body-bg);
 }
 
 #term {
   padding: 10px 20px;
-  background: #efefef;
+  background: var(--body-bg);
   border: none;
   border-radius: .5rem;
-  color: #444;
+  color: var(--text-color);
   font-size: 1rem;
   font-weight: 700;
-
   text-align: left;
   outline: none;
   cursor: pointer;
@@ -179,7 +168,7 @@ body {
 }
 
 input::placeholder {
-  opacity: 1;
+  opacity: var(--placeholder-opacity);
   transition: opacity 0.3s ease;
 }
 
@@ -188,17 +177,16 @@ input:hover::placeholder {
 }
 
 #searchFeild {
-
   justify-self: center;
   grid-area: 2 / 1 / 3 / 2;
 }
 
 .btn {
   padding: 10px 20px;
-  background: #efefef;
+  background: var(--btn-bg);
   border: none;
   border-radius: .5rem;
-  color: #444;
+  color: var(--btn-text-color);
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
@@ -209,7 +197,6 @@ input:hover::placeholder {
     -2px -2px 4px rgba(255, 255, 255, .4),
     2px 2px 2px rgba(255, 255, 255, .05),
     2px 2px 4px rgba(0, 0, 0, .1);
-
 }
 
 .btn:hover {
@@ -217,7 +204,6 @@ input:hover::placeholder {
     -6px -6px 10px rgba(255, 255, 255, .5),
     6px 6px 8px rgba(255, 255, 255, .075),
     6px 6px 10px rgba(0, 0, 0, .15);
-
 }
 
 .btn:active {
@@ -226,7 +212,6 @@ input:hover::placeholder {
     inset 2px 2px 2px rgba(255, 255, 255, .075),
     inset 2px 2px 4px rgba(0, 0, 0, .15);
 }
-
 
 #error {
   margin-top: 10px;
