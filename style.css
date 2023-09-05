@@ -154,6 +154,7 @@ tr:hover {
 
 
 #searchStore {
+  display: none;
   justify-self: start;
   color: #f8ebeb;
   align-self: end;
