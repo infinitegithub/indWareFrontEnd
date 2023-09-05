@@ -128,7 +128,7 @@ th {
 }
 
 td {
-font-family: ' sans-serif;
+  font-family:  sans-serif;
   border: 1.5px solid var(--table-border-color);
   padding: 8px;
   text-align: left;
@@ -139,7 +139,7 @@ font-family: ' sans-serif;
 }
 
 tr {
-  font-family: ' sans-serif;
+  font-family: sans-serif;
   background-color: #090909;
   color: #efefef;
 }
