@@ -55,8 +55,10 @@ a {
   border: 1px solid var(--secondary-color);
   box-shadow: 3px 3px 10px var(--box-shadow-color),
     -3px -3px 10px #efefef;
-  margin-right: 2rem;
+  
   margin-bottom: 1rem;
+  margin-right: 100px;
+  margin-top: 123px;
   font-size: 16px;
   font-weight: bold;
   justify-self: end;
