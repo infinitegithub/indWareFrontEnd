@@ -118,6 +118,7 @@ a:hover:after {
 }
 
 th {
+  font-family: 'Bebas Neue', sans-serif;
   border: 1.5px solid var(--table-border-color);
   padding: 8px;
   text-align: left;
